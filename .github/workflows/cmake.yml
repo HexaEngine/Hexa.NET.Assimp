@@ -1,4 +1,4 @@
-name: Build assimp Libraries
+name: Build Assimp Libraries
 
 on: [workflow_dispatch]
 
@@ -78,7 +78,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4.3.4
         with:
-          name: raylib-${{ matrix.os }}-${{ matrix.arch }}-artifacts
+          name: assimp-${{ matrix.os }}-${{ matrix.arch }}-artifacts
           path: |
             assimp/build/bin/*.dll
             assimp/build/bin/*.so
