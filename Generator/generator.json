@@ -1,0 +1,23 @@
+{
+  "Namespace": "Hexa.NET.Assimp",
+  "ApiName": "Assimp",
+  "LibName": "Assimp",
+  "EnableExperimentalOptions": true,
+  "GenerateConstructorsForStructs": true,
+  "GeneratePlaceholderComments": false,
+  "GenerateMetadata": true,
+  "ImportType": "FunctionTable",
+  "ConstantNamingConvention": "Unknown",
+  "TypeMappings": {
+    "b2Vec2": "Vector2",
+    "aiVector3D": "Vector3",
+    "aiVector2D": "Vector2",
+    "aiQuaternion": "Quaternion",
+    "aiMatrix4x4": "Matrix4x4",
+    "aiMatrix3x3": "Matrix3x3",
+    "ai_uint32": "uint",
+    "aiColor4D": "Vector4"
+  },
+  "IgnoredTypes": [ "b2Vec2" ],
+  "Usings": [ "System.Numerics" ]
+}
