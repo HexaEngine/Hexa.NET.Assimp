@@ -75,6 +75,11 @@ jobs:
       - name: Build Assimp
         run: cmake --build assimp/build --config Release
 
+      - name: Move Windows binaries
+        if: matrix.os == 'windows-latest'
+        run: |
+          mv assimp/build/bin/Release/*.dll assimp/build/bin/
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4.3.4
         with:
