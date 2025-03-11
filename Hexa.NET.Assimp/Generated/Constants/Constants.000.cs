@@ -539,6 +539,242 @@ namespace Hexa.NET.Assimp
 		[NativeName(NativeNameType.Value, "\"DefaultMaterial\"")]
 		public const string AI_DEFAULT_MATERIAL_NAME = "DefaultMaterial";
 
+		[NativeName(NativeNameType.Const, "AI_TEXTURE_TYPE_MAX")]
+		[NativeName(NativeNameType.Value, "aiTextureType_GLTF_METALLIC_ROUGHNESS")]
+		public const AiTextureType AI_TEXTURE_TYPE_MAX = AiTextureType.GltfMetallicRoughness;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_NAME")]
+		[NativeName(NativeNameType.Value, "\"?mat.name\",0,0")]
+		public const string AI_MATKEY_NAME = "?mat.name";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_TWOSIDED")]
+		[NativeName(NativeNameType.Value, "\"$mat.twosided\",0,0")]
+		public const string AI_MATKEY_TWOSIDED = "$mat.twosided";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHADING_MODEL")]
+		[NativeName(NativeNameType.Value, "\"$mat.shadingm\",0,0")]
+		public const string AI_MATKEY_SHADING_MODEL = "$mat.shadingm";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_ENABLE_WIREFRAME")]
+		[NativeName(NativeNameType.Value, "\"$mat.wireframe\",0,0")]
+		public const string AI_MATKEY_ENABLE_WIREFRAME = "$mat.wireframe";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_BLEND_FUNC")]
+		[NativeName(NativeNameType.Value, "\"$mat.blend\",0,0")]
+		public const string AI_MATKEY_BLEND_FUNC = "$mat.blend";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_OPACITY")]
+		[NativeName(NativeNameType.Value, "\"$mat.opacity\",0,0")]
+		public const string AI_MATKEY_OPACITY = "$mat.opacity";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_TRANSPARENCYFACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.transparencyfactor\",0,0")]
+		public const string AI_MATKEY_TRANSPARENCYFACTOR = "$mat.transparencyfactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_BUMPSCALING")]
+		[NativeName(NativeNameType.Value, "\"$mat.bumpscaling\",0,0")]
+		public const string AI_MATKEY_BUMPSCALING = "$mat.bumpscaling";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHININESS")]
+		[NativeName(NativeNameType.Value, "\"$mat.shininess\",0,0")]
+		public const string AI_MATKEY_SHININESS = "$mat.shininess";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_REFLECTIVITY")]
+		[NativeName(NativeNameType.Value, "\"$mat.reflectivity\",0,0")]
+		public const string AI_MATKEY_REFLECTIVITY = "$mat.reflectivity";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHININESS_STRENGTH")]
+		[NativeName(NativeNameType.Value, "\"$mat.shinpercent\",0,0")]
+		public const string AI_MATKEY_SHININESS_STRENGTH = "$mat.shinpercent";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_REFRACTI")]
+		[NativeName(NativeNameType.Value, "\"$mat.refracti\",0,0")]
+		public const string AI_MATKEY_REFRACTI = "$mat.refracti";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_COLOR_DIFFUSE")]
+		[NativeName(NativeNameType.Value, "\"$clr.diffuse\",0,0")]
+		public const string AI_MATKEY_COLOR_DIFFUSE = "$clr.diffuse";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_COLOR_AMBIENT")]
+		[NativeName(NativeNameType.Value, "\"$clr.ambient\",0,0")]
+		public const string AI_MATKEY_COLOR_AMBIENT = "$clr.ambient";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_COLOR_SPECULAR")]
+		[NativeName(NativeNameType.Value, "\"$clr.specular\",0,0")]
+		public const string AI_MATKEY_COLOR_SPECULAR = "$clr.specular";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_COLOR_EMISSIVE")]
+		[NativeName(NativeNameType.Value, "\"$clr.emissive\",0,0")]
+		public const string AI_MATKEY_COLOR_EMISSIVE = "$clr.emissive";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_COLOR_TRANSPARENT")]
+		[NativeName(NativeNameType.Value, "\"$clr.transparent\",0,0")]
+		public const string AI_MATKEY_COLOR_TRANSPARENT = "$clr.transparent";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_COLOR_REFLECTIVE")]
+		[NativeName(NativeNameType.Value, "\"$clr.reflective\",0,0")]
+		public const string AI_MATKEY_COLOR_REFLECTIVE = "$clr.reflective";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLOBAL_BACKGROUND_IMAGE")]
+		[NativeName(NativeNameType.Value, "\"?bg.global\",0,0")]
+		public const string AI_MATKEY_GLOBAL_BACKGROUND_IMAGE = "?bg.global";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLOBAL_SHADERLANG")]
+		[NativeName(NativeNameType.Value, "\"?sh.lang\",0,0")]
+		public const string AI_MATKEY_GLOBAL_SHADERLANG = "?sh.lang";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHADER_VERTEX")]
+		[NativeName(NativeNameType.Value, "\"?sh.vs\",0,0")]
+		public const string AI_MATKEY_SHADER_VERTEX = "?sh.vs";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHADER_FRAGMENT")]
+		[NativeName(NativeNameType.Value, "\"?sh.fs\",0,0")]
+		public const string AI_MATKEY_SHADER_FRAGMENT = "?sh.fs";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHADER_GEO")]
+		[NativeName(NativeNameType.Value, "\"?sh.gs\",0,0")]
+		public const string AI_MATKEY_SHADER_GEO = "?sh.gs";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHADER_TESSELATION")]
+		[NativeName(NativeNameType.Value, "\"?sh.ts\",0,0")]
+		public const string AI_MATKEY_SHADER_TESSELATION = "?sh.ts";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHADER_PRIMITIVE")]
+		[NativeName(NativeNameType.Value, "\"?sh.ps\",0,0")]
+		public const string AI_MATKEY_SHADER_PRIMITIVE = "?sh.ps";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHADER_COMPUTE")]
+		[NativeName(NativeNameType.Value, "\"?sh.cs\",0,0")]
+		public const string AI_MATKEY_SHADER_COMPUTE = "?sh.cs";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_USE_COLOR_MAP")]
+		[NativeName(NativeNameType.Value, "\"$mat.useColorMap\",0,0")]
+		public const string AI_MATKEY_USE_COLOR_MAP = "$mat.useColorMap";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_BASE_COLOR")]
+		[NativeName(NativeNameType.Value, "\"$clr.base\",0,0")]
+		public const string AI_MATKEY_BASE_COLOR = "$clr.base";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_BASE_COLOR_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_BASE_COLOR,0")]
+		public const AiTextureType AI_MATKEY_BASE_COLOR_TEXTURE = AiTextureType.BaseColor;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_USE_METALLIC_MAP")]
+		[NativeName(NativeNameType.Value, "\"$mat.useMetallicMap\",0,0")]
+		public const string AI_MATKEY_USE_METALLIC_MAP = "$mat.useMetallicMap";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_METALLIC_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.metallicFactor\",0,0")]
+		public const string AI_MATKEY_METALLIC_FACTOR = "$mat.metallicFactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_METALLIC_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_METALNESS,0")]
+		public const AiTextureType AI_MATKEY_METALLIC_TEXTURE = AiTextureType.Metalness;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_USE_ROUGHNESS_MAP")]
+		[NativeName(NativeNameType.Value, "\"$mat.useRoughnessMap\",0,0")]
+		public const string AI_MATKEY_USE_ROUGHNESS_MAP = "$mat.useRoughnessMap";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_ROUGHNESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.roughnessFactor\",0,0")]
+		public const string AI_MATKEY_ROUGHNESS_FACTOR = "$mat.roughnessFactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_ROUGHNESS_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_DIFFUSE_ROUGHNESS,0")]
+		public const AiTextureType AI_MATKEY_ROUGHNESS_TEXTURE = AiTextureType.DiffuseRoughness;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_ANISOTROPY_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.anisotropyFactor\",0,0")]
+		public const string AI_MATKEY_ANISOTROPY_FACTOR = "$mat.anisotropyFactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SPECULAR_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.specularFactor\",0,0")]
+		public const string AI_MATKEY_SPECULAR_FACTOR = "$mat.specularFactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLOSSINESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.glossinessFactor\",0,0")]
+		public const string AI_MATKEY_GLOSSINESS_FACTOR = "$mat.glossinessFactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHEEN_COLOR_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$clr.sheen.factor\",0,0")]
+		public const string AI_MATKEY_SHEEN_COLOR_FACTOR = "$clr.sheen.factor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHEEN_ROUGHNESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.sheen.roughnessFactor\",0,0")]
+		public const string AI_MATKEY_SHEEN_ROUGHNESS_FACTOR = "$mat.sheen.roughnessFactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHEEN_COLOR_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_SHEEN,0")]
+		public const AiTextureType AI_MATKEY_SHEEN_COLOR_TEXTURE = AiTextureType.Sheen;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_SHEEN_ROUGHNESS_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_SHEEN,1")]
+		public const AiTextureType AI_MATKEY_SHEEN_ROUGHNESS_TEXTURE = AiTextureType.Sheen;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_CLEARCOAT_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.clearcoat.factor\",0,0")]
+		public const string AI_MATKEY_CLEARCOAT_FACTOR = "$mat.clearcoat.factor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_CLEARCOAT_ROUGHNESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.clearcoat.roughnessFactor\",0,0")]
+		public const string AI_MATKEY_CLEARCOAT_ROUGHNESS_FACTOR = "$mat.clearcoat.roughnessFactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_CLEARCOAT_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_CLEARCOAT,0")]
+		public const AiTextureType AI_MATKEY_CLEARCOAT_TEXTURE = AiTextureType.Clearcoat;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_CLEARCOAT_ROUGHNESS_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_CLEARCOAT,1")]
+		public const AiTextureType AI_MATKEY_CLEARCOAT_ROUGHNESS_TEXTURE = AiTextureType.Clearcoat;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_CLEARCOAT_NORMAL_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_CLEARCOAT,2")]
+		public const AiTextureType AI_MATKEY_CLEARCOAT_NORMAL_TEXTURE = AiTextureType.Clearcoat;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_TRANSMISSION_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.transmission.factor\",0,0")]
+		public const string AI_MATKEY_TRANSMISSION_FACTOR = "$mat.transmission.factor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_TRANSMISSION_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_TRANSMISSION,0")]
+		public const AiTextureType AI_MATKEY_TRANSMISSION_TEXTURE = AiTextureType.Transmission;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_VOLUME_THICKNESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.volume.thicknessFactor\",0,0")]
+		public const string AI_MATKEY_VOLUME_THICKNESS_FACTOR = "$mat.volume.thicknessFactor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_VOLUME_THICKNESS_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_TRANSMISSION,1")]
+		public const AiTextureType AI_MATKEY_VOLUME_THICKNESS_TEXTURE = AiTextureType.Transmission;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_VOLUME_ATTENUATION_DISTANCE")]
+		[NativeName(NativeNameType.Value, "\"$mat.volume.attenuationDistance\",0,0")]
+		public const string AI_MATKEY_VOLUME_ATTENUATION_DISTANCE = "$mat.volume.attenuationDistance";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_VOLUME_ATTENUATION_COLOR")]
+		[NativeName(NativeNameType.Value, "\"$mat.volume.attenuationColor\",0,0")]
+		public const string AI_MATKEY_VOLUME_ATTENUATION_COLOR = "$mat.volume.attenuationColor";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_USE_EMISSIVE_MAP")]
+		[NativeName(NativeNameType.Value, "\"$mat.useEmissiveMap\",0,0")]
+		public const string AI_MATKEY_USE_EMISSIVE_MAP = "$mat.useEmissiveMap";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_EMISSIVE_INTENSITY")]
+		[NativeName(NativeNameType.Value, "\"$mat.emissiveIntensity\",0,0")]
+		public const string AI_MATKEY_EMISSIVE_INTENSITY = "$mat.emissiveIntensity";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_USE_AO_MAP")]
+		[NativeName(NativeNameType.Value, "\"$mat.useAOMap\",0,0")]
+		public const string AI_MATKEY_USE_AO_MAP = "$mat.useAOMap";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_ANISOTROPY_ROTATION")]
+		[NativeName(NativeNameType.Value, "\"$mat.anisotropyRotation\",0,0")]
+		public const string AI_MATKEY_ANISOTROPY_ROTATION = "$mat.anisotropyRotation";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_ANISOTROPY_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_ANISOTROPY,0")]
+		public const AiTextureType AI_MATKEY_ANISOTROPY_TEXTURE = AiTextureType.Anisotropy;
+
 		[NativeName(NativeNameType.Const, "_AI_MATKEY_TEXTURE_BASE")]
 		[NativeName(NativeNameType.Value, "\"$tex.file\"")]
 		public const string _AI_MATKEY_TEXTURE_BASE = "$tex.file";
@@ -579,6 +815,18 @@ namespace Hexa.NET.Assimp
 		[NativeName(NativeNameType.Value, "\"$tex.flags\"")]
 		public const string _AI_MATKEY_TEXFLAGS_BASE = "$tex.flags";
 
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_METALLICROUGHNESS_TEXTURE")]
+		[NativeName(NativeNameType.Value, "aiTextureType_GLTF_METALLIC_ROUGHNESS,0")]
+		public const AiTextureType AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_METALLICROUGHNESS_TEXTURE = AiTextureType.GltfMetallicRoughness;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_ALPHAMODE")]
+		[NativeName(NativeNameType.Value, "\"$mat.gltf.alphaMode\",0,0")]
+		public const string AI_MATKEY_GLTF_ALPHAMODE = "$mat.gltf.alphaMode";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_ALPHACUTOFF")]
+		[NativeName(NativeNameType.Value, "\"$mat.gltf.alphaCutoff\",0,0")]
+		public const string AI_MATKEY_GLTF_ALPHACUTOFF = "$mat.gltf.alphaCutoff";
+
 		[NativeName(NativeNameType.Const, "_AI_MATKEY_GLTF_MAPPINGNAME_BASE")]
 		[NativeName(NativeNameType.Value, "\"$tex.mappingname\"")]
 		public const string _AI_MATKEY_GLTF_MAPPINGNAME_BASE = "$tex.mappingname";
@@ -611,9 +859,85 @@ namespace Hexa.NET.Assimp
 		[NativeName(NativeNameType.Value, "17")]
 		public const int AI_MEMORYIO_MAGIC_FILENAME_LENGTH = 17;
 
+		[NativeName(NativeNameType.Const, "AI_MATKEY_OBJ_ILLUM")]
+		[NativeName(NativeNameType.Value, "\"$mat.illum\",0,0")]
+		public const string AI_MATKEY_OBJ_ILLUM = "$mat.illum";
+
 		[NativeName(NativeNameType.Const, "_AI_MATKEY_OBJ_BUMPMULT_BASE")]
 		[NativeName(NativeNameType.Value, "\"$tex.bumpmult\"")]
 		public const string _AI_MATKEY_OBJ_BUMPMULT_BASE = "$tex.bumpmult";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_BASE_COLOR_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_BASE_COLOR")]
+		public const string AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_BASE_COLOR_FACTOR = AI_MATKEY_BASE_COLOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_BASE_COLOR_TEXTURE")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_BASE_COLOR_TEXTURE")]
+		public const AiTextureType AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_BASE_COLOR_TEXTURE = AI_MATKEY_BASE_COLOR_TEXTURE;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_METALLIC_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_METALLIC_FACTOR")]
+		public const string AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_METALLIC_FACTOR = AI_MATKEY_METALLIC_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_ROUGHNESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_ROUGHNESS_FACTOR")]
+		public const string AI_MATKEY_GLTF_PBRMETALLICROUGHNESS_ROUGHNESS_FACTOR = AI_MATKEY_ROUGHNESS_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_PBRSPECULARGLOSSINESS")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_GLOSSINESS_FACTOR")]
+		public const string AI_MATKEY_GLTF_PBRSPECULARGLOSSINESS = AI_MATKEY_GLOSSINESS_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_PBRSPECULARGLOSSINESS_GLOSSINESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_GLOSSINESS_FACTOR")]
+		public const string AI_MATKEY_GLTF_PBRSPECULARGLOSSINESS_GLOSSINESS_FACTOR = AI_MATKEY_GLOSSINESS_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_UNLIT")]
+		[NativeName(NativeNameType.Value, "\"$mat.gltf.unlit\",0,0")]
+		public const string AI_MATKEY_GLTF_UNLIT = "$mat.gltf.unlit";
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_SHEEN_COLOR_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_SHEEN_COLOR_FACTOR")]
+		public const string AI_MATKEY_GLTF_MATERIAL_SHEEN_COLOR_FACTOR = AI_MATKEY_SHEEN_COLOR_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_SHEEN_ROUGHNESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_SHEEN_ROUGHNESS_FACTOR")]
+		public const string AI_MATKEY_GLTF_MATERIAL_SHEEN_ROUGHNESS_FACTOR = AI_MATKEY_SHEEN_ROUGHNESS_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_SHEEN_COLOR_TEXTURE")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_SHEEN_COLOR_TEXTURE")]
+		public const AiTextureType AI_MATKEY_GLTF_MATERIAL_SHEEN_COLOR_TEXTURE = AI_MATKEY_SHEEN_COLOR_TEXTURE;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_SHEEN_ROUGHNESS_TEXTURE")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_SHEEN_ROUGHNESS_TEXTURE")]
+		public const AiTextureType AI_MATKEY_GLTF_MATERIAL_SHEEN_ROUGHNESS_TEXTURE = AI_MATKEY_SHEEN_ROUGHNESS_TEXTURE;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_CLEARCOAT_FACTOR")]
+		public const string AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_FACTOR = AI_MATKEY_CLEARCOAT_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_ROUGHNESS_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_CLEARCOAT_ROUGHNESS_FACTOR")]
+		public const string AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_ROUGHNESS_FACTOR = AI_MATKEY_CLEARCOAT_ROUGHNESS_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_TEXTURE")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_CLEARCOAT_TEXTURE")]
+		public const AiTextureType AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_TEXTURE = AI_MATKEY_CLEARCOAT_TEXTURE;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_ROUGHNESS_TEXTURE")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_CLEARCOAT_ROUGHNESS_TEXTURE")]
+		public const AiTextureType AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_ROUGHNESS_TEXTURE = AI_MATKEY_CLEARCOAT_ROUGHNESS_TEXTURE;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_NORMAL_TEXTURE")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_CLEARCOAT_NORMAL_TEXTURE")]
+		public const AiTextureType AI_MATKEY_GLTF_MATERIAL_CLEARCOAT_NORMAL_TEXTURE = AI_MATKEY_CLEARCOAT_NORMAL_TEXTURE;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_TRANSMISSION_FACTOR")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_TRANSMISSION_FACTOR")]
+		public const string AI_MATKEY_GLTF_MATERIAL_TRANSMISSION_FACTOR = AI_MATKEY_TRANSMISSION_FACTOR;
+
+		[NativeName(NativeNameType.Const, "AI_MATKEY_GLTF_MATERIAL_TRANSMISSION_TEXTURE")]
+		[NativeName(NativeNameType.Value, "AI_MATKEY_TRANSMISSION_TEXTURE")]
+		public const AiTextureType AI_MATKEY_GLTF_MATERIAL_TRANSMISSION_TEXTURE = AI_MATKEY_TRANSMISSION_TEXTURE;
 
 		[NativeName(NativeNameType.Const, "AI_EMBEDDED_TEXNAME_PREFIX")]
 		[NativeName(NativeNameType.Value, "\"*\"")]

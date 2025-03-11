@@ -2,6 +2,8 @@
 using HexaGen.Patching;
 using System.Text.RegularExpressions;
 using System.Text;
+using HexaGen.GenerationSteps;
+using Generator;
 
 List<string> files = [.. Directory.GetFiles("include", "*.h")];
 files.RemoveAll(x => x.Contains("XmlParser.h") || x.Contains("ZipArchiveIOSystem.h"));
@@ -28,8 +30,12 @@ for (int i = 0; i < hFiles.Length; i++)
 
 BatchGenerator batch = new();
 batch.Setup<CsCodeGenerator>("generator.json");
-CsCodeGeneratorConfig config = CsCodeGeneratorConfig.Load("generator.json");
-CsCodeGenerator generator = new(config);
-generator.LogEvent += (s, m) => Console.WriteLine($"{s}: {m}");
-generator.PatchEngine.RegisterPrePatch(new NamingPatch(["Ai"], NamingPatchOptions.None));
-generator.Generate([.. files], "../../../../Hexa.NET.Assimp/Generated");
+batch.AlterGenerator(g =>
+{
+    var step = g.GetGenerationStep<ConstantGenerationStep>();
+    int index = g.GenerationSteps.IndexOf(step);
+    g.GenerationSteps.RemoveAt(index);
+    g.GenerationSteps.Insert(index, new AssimpConstantGenerationStep(g, g.Settings));
+});
+batch.AddPrePatch(new NamingPatch(["Ai"], NamingPatchOptions.None));
+batch.Generate([.. files], "../../../../Hexa.NET.Assimp/Generated");
