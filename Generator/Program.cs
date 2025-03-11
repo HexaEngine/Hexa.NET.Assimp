@@ -26,6 +26,8 @@ for (int i = 0; i < hFiles.Length; i++)
     File.WriteAllText(file, sb.ToString());
 }
 
+BatchGenerator batch = new();
+batch.Setup<CsCodeGenerator>("generator.json");
 CsCodeGeneratorConfig config = CsCodeGeneratorConfig.Load("generator.json");
 CsCodeGenerator generator = new(config);
 generator.LogEvent += (s, m) => Console.WriteLine($"{s}: {m}");

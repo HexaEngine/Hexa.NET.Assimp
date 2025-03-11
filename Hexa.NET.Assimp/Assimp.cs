@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +16,12 @@ namespace Hexa.NET.Assimp
 
         public static string GetLibraryName()
         {
-            return "assimp-vc143-mtd";
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                return "assimp-vc143-mt";
+            }
+
+            return "libassimp";
         }
     }
 }
